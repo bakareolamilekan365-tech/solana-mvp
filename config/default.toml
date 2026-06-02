@@ -1,0 +1,8 @@
+rpc_url = "https://api.mainnet-beta.solana.com"
+keypair_path = "C:/Users/DELL/.config/solana/id.json"
+
+[strategy]
+check_interval_secs = 5
+target_program = "11111111111111111111111111111111"
+transfer_lamports = 1000
+max_retries = 1
