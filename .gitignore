@@ -2,3 +2,6 @@
 **/*.rs.bk
 config/local.toml
 .DS_Store
+/deepseek_mermaid_20260524_dd51cb.mermaid
+/mvp-architecture.png
+/mvp-architecture.svg
