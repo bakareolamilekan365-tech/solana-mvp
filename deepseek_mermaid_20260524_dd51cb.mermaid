@@ -1,0 +1,20 @@
+flowchart LR
+    A[Solana RPC<br/>Single Endpoint]
+    B[Event Detection<br/>e.g. log subscription]
+    C[Transaction Builder<br/>basic swap instruction]
+    D[Signer<br/>keypair]
+    E[Send & Retry<br/>submit + one retry]
+    F[Logging<br/>txid & status]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+
+    style A fill:#1a1a2e,stroke:#e94560,color:#eee
+    style B fill:#16213e,stroke:#0f3460,color:#eee
+    style C fill:#0f3460,stroke:#533483,color:#eee
+    style D fill:#533483,stroke:#e94560,color:#eee
+    style E fill:#1a1a2e,stroke:#00d2ff,color:#eee
+    style F fill:#0f3460,stroke:#00d2ff,color:#eee

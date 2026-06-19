@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="1800" viewBox="0 0 850 1800">
+  <defs>
+    <style>
+      .box { rx: 14; ry: 14; stroke-width: 2; }
+      .title { font: 700 21px Arial, sans-serif; fill: #1f2937; }
+      .line { font: 14px Arial, sans-serif; fill: #1f2937; }
+      .edge { stroke: #666; stroke-width: 2.2; fill: none; }
+      .dash { stroke: #d79b00; stroke-width: 2.2; fill: none; stroke-dasharray: 8 6; }
+      .label { font: 13px Arial, sans-serif; fill: #8a5a00; background: #fff; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#666" />
+    </marker>
+    <marker id="arrowDash" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d79b00" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#fbfbfd" />
+
+  <g transform="translate(260,20)">
+    <rect class="box" width="330" height="120" fill="#dae8fc" stroke="#6c8ebf" />
+    <text class="title" x="165" y="28" text-anchor="middle">Solana Infrastructure</text>
+    <text class="line" x="165" y="50" text-anchor="middle">RPC Provider</text>
+    <text class="line" x="165" y="70" text-anchor="middle">WebSocket Streams</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Yellowstone gRPC</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Jito Routing</text>
+  </g>
+
+  <g transform="translate(260,180)">
+    <rect class="box" width="330" height="120" fill="#d5e8d4" stroke="#82b366" />
+    <text class="title" x="165" y="28" text-anchor="middle">Streaming Layer</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Connection Manager</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Reconnect Handler</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Timeout Handler</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Heartbeat Monitoring</text>
+  </g>
+
+  <g transform="translate(260,340)">
+    <rect class="box" width="330" height="120" fill="#fff2cc" stroke="#d6b656" />
+    <text class="title" x="165" y="28" text-anchor="middle">Event Ingestion Layer</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Raw Event Parser</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Event Normalizer</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Event Filter</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Malformed Event Rejection</text>
+  </g>
+
+  <g transform="translate(260,500)">
+    <rect class="box" width="330" height="120" fill="#f8cecc" stroke="#b85450" />
+    <text class="title" x="165" y="28" text-anchor="middle">Strategy Engine</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Rule Evaluation</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Pattern Detection</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Risk Validation</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Execution Signal Generator</text>
+  </g>
+
+  <g transform="translate(260,660)">
+    <rect class="box" width="330" height="130" fill="#e1d5e7" stroke="#9673a6" />
+    <text class="title" x="165" y="28" text-anchor="middle">Execution Signal</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Token</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Action Buy/Sell</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Amount</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Slippage</text>
+    <text class="line" x="165" y="130" text-anchor="middle">Priority Settings</text>
+  </g>
+
+  <g transform="translate(260,830)">
+    <rect class="box" width="330" height="120" fill="#f5f5f5" stroke="#666666" />
+    <text class="title" x="165" y="28" text-anchor="middle">Transaction Builder</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Instruction Builder</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Priority Fee Logic</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Jito Tip Logic</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Transaction Serialization</text>
+  </g>
+
+  <g transform="translate(260,990)">
+    <rect class="box" width="330" height="110" fill="#dae8fc" stroke="#6c8ebf" />
+    <text class="title" x="165" y="28" text-anchor="middle">Signing Layer</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Wallet Loader</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Signer</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Transaction Validation</text>
+  </g>
+
+  <g transform="translate(260,1140)">
+    <rect class="box" width="330" height="120" fill="#d5e8d4" stroke="#82b366" />
+    <text class="title" x="165" y="28" text-anchor="middle">Execution Engine</text>
+    <text class="line" x="165" y="50" text-anchor="middle">RPC Submission</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Jito Submission</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Retry Logic</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Duplicate Prevention</text>
+  </g>
+
+  <g transform="translate(260,1300)">
+    <rect class="box" width="330" height="120" fill="#fff2cc" stroke="#d6b656" />
+    <text class="title" x="165" y="28" text-anchor="middle">Execution Monitor</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Confirmation Tracking</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Failure Detection</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Slot Monitoring</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Latency Measurement</text>
+  </g>
+
+  <g transform="translate(260,1460)">
+    <rect class="box" width="330" height="130" fill="#f8cecc" stroke="#b85450" />
+    <text class="title" x="165" y="28" text-anchor="middle">Logging &amp; Observability</text>
+    <text class="line" x="165" y="50" text-anchor="middle">Structured Logs</text>
+    <text class="line" x="165" y="70" text-anchor="middle">Retry Logs</text>
+    <text class="line" x="165" y="90" text-anchor="middle">Transaction Lifecycle Logs</text>
+    <text class="line" x="165" y="110" text-anchor="middle">Metrics Collection</text>
+    <text class="line" x="165" y="130" text-anchor="middle">Failure Diagnostics</text>
+  </g>
+
+  <path class="edge" d="M425 140 L425 180" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 300 L425 340" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 460 L425 500" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 620 L425 660" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 790 L425 830" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 950 L425 990" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 1100 L425 1140" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 1260 L425 1300" marker-end="url(#arrow)" />
+  <path class="edge" d="M425 1420 L425 1460" marker-end="url(#arrow)" />
+
+  <path class="dash" d="M555 240 C650 240, 650 180, 490 180" marker-end="url(#arrowDash)" />
+  <text class="label" x="646" y="205">reconnect</text>
+
+  <path class="dash" d="M555 1200 C650 1200, 650 1140, 490 1140" marker-end="url(#arrowDash)" />
+  <text class="label" x="664" y="1165">retry</text>
+
+  <path class="dash" d="M425 1420 C425 1445, 610 1445, 610 1525 C610 1605, 565 1605, 555 1595" marker-end="url(#arrowDash)" />
+  <text class="label" x="620" y="1538">failure</text>
+</svg>
